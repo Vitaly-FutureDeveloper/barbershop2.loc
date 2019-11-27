@@ -1,0 +1,55 @@
+@media(min-width: @mobile-width) {
+    .stats {
+        width: 320px;
+        margin: 0 auto;
+    }
+
+    .stats__header {
+        padding: 31px 38px 29px 38px;
+    }
+
+    .stats__list {
+        width: 100%;
+    }
+
+    .stats__legend--bottom {
+        display: none;
+    }
+}
+
+
+@media(min-width: @tablet-width){
+    .stats{
+        width: 640px;
+        margin-top: -184px;
+    }
+    .stats__header{
+        padding: 20px 75px 31px 40px;
+    }
+    .stats__list{
+        display: flex;
+        width: 640px;
+    }
+    .stats__legend--bottom{
+        display: none;
+    }
+}
+
+
+@media(min-width: @desctop-width){
+    .stats{
+        display: flex;
+        width: 960px;
+        margin-top: -160px;
+    }
+    .stats__header{
+        width: 240px;
+    }
+    .stats__list{
+        display: flex;
+        width: 640px;
+    }
+    .stats__legend--bottom{
+        display: none;
+    }
+}
