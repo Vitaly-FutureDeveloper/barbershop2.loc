@@ -1,3 +1,18 @@
+@font-face{
+    font-weight: normal;
+    font-family: "PT Sans - Narrow";
+    font-style: normal;
+    src: url("fonts/ptsansnarrow.woff2") format("woff2"),
+    url("fonts/ptsansnarrow.woff") format("woff");
+}
+@font-face{
+    font-weight: bold;
+    font-family: "PT Sans - Narrow";
+    font-style: normal;
+    src: url("fonts/ptsansnarrowbold.woff2") format("woff2"),
+    url("fonts/ptsansnarrowbold.woff") format("woff");
+}
+
 body {
     background: white;
     color: #000000;
@@ -29,4 +44,11 @@ input[type='radio'].visually-hidden{
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+.page-header__logo{
+    text-align: center;
+}
+.page-header__logo img{
+    width: 226px;
+    height: 85px;
 }
