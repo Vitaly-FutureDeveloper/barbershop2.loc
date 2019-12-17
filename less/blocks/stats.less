@@ -1,6 +1,6 @@
 .stats {
-    width: 320px;
-    margin: 0 auto;
+    width: auto;
+    //margin: 0 auto;
 }
 .stats__header {
     padding: 31px 38px 29px 38px;
@@ -99,7 +99,9 @@
 
 @media(min-width: @tablet-width){
     .stats{
-        width: 640px;
+        width: 84%;
+        max-width: 960px;
+        margin: 0 auto;
         margin-top: -185px;
     }
     .stats__header{
@@ -124,7 +126,7 @@
         }
     }
     .stats__slogan{
-        width: 240px;
+        width: 50%;
         margin-bottom: 18px;
 
         font-size: 40px;
@@ -132,8 +134,11 @@
         text-align: left;
         text-transform: none;
     }
+    .stats__slogan br{
+        display: none;
+    }
     .stats__intro{
-        width: 210px;
+        //width: 37.5%;
         margin-top: 5px;
         padding-right: 47px;
 
@@ -153,7 +158,9 @@
         flex-wrap: wrap;
     }
     .stats__list tr{
-        width: 250px;
+        width: 50%;
+        flex-flow: 1;
+        box-sizing: border-box;
         padding: 25px 35px;
         padding-bottom: 28px;
     }
@@ -183,12 +190,13 @@
 @media(min-width: @desctop-width){
     .stats{
         display: flex;
-        width: 960px;
+        //width: 960px;
         margin-top: -160px;
     }
     .stats__header{
-        display: block;
         width: 240px;
+        flex-direction: column;
+        flex-grow: 1;
         &::before{
             top: 22px;
         }
@@ -196,11 +204,15 @@
     .stats__slogan{
         width: auto;
         margin-bottom: 42px;
-        margin-right: 30px;
     }
     .stats__list{
         display: flex;
-        //width: 640px;
+        width: 640px;
+        flex-grow: 1;
+    }
+    .stats__legend--top{
+        width: auto;
+        margin-top: auto;
     }
     .stats__legend--bottom{
         display: none;
